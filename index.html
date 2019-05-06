@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tic Tac Toe</title>
+  <meta name="description" content="Tic Tac Toe Game">
+  <meta name="author" content="Martin Davila">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="game" hidden>
+      <h1 id="header">Player 1's turn</h1>
+      <div id="root">
+
+      </div>
+      <input id="resetButton" type="button" value="reset" name="reset" onclick="displayController.clearGame()"/>
+    </div>
+    <div id="name-form">
+      <h1>Welcome To Tic Tac Toe</h1>
+      <label for="player1Input">Player X Name:</label>
+      <input id="player1Input" type="text" placeholder="player 1" /><br>
+      <label for="player2Input">Player O Name:</label>
+      <input id="player2Input" type="text" placeholder="player 2" />
+      <input id="submit" type="submit" name="Start Game" value="Start Game"/>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
